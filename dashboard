@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Colors
+RED="\e[31m"
+GREEN="\e[32m"
+CYAN="\e[36m"
+YELLOW="\e[33m"
+RESET="\e[0m"
+
+echo -e "${CYAN}========================================${RESET}"
+echo -e "${YELLOW}      🚀 System Dashboard 🚀            ${RESET}"
+echo -e "${CYAN}========================================${RESET}"
+
+echo -e "${GREEN}User:${RESET}        $(whoami)"
+echo -e "${GREEN}Hostname:${RESET}    $(hostname)"
+echo -e "${GREEN}OS:${RESET}          $(lsb_release -d | cut -f2)"
+echo -e "${GREEN}Kernel:${RESET}      $(uname -r)"
+echo -e "${GREEN}Uptime:${RESET}      $(uptime -p)"
+echo -e "${GREEN}Shell:${RESET}       $SHELL"
+
+echo -e "\n${CYAN}---- Resources ----${RESET}"
+echo -e "${GREEN}CPU Load:${RESET}    $(uptime | awk -F'load average:' '{ print $2 }')"
+echo -e "${GREEN}Memory:${RESET}      $(free -h | awk '/Mem:/ {print $3 "/" $2}')"
+echo -e "${GREEN}Disk:${RESET}        $(df -h / | awk 'NR==2 {print $3 "/" $2 " (" $5 ")"}')"
+
+echo -e "\n${CYAN}---- Network ----${RESET}"
+echo -e "${GREEN}IP:${RESET}          $(hostname -I | awk '{print $1}')"
+echo -e "${GREEN}Default GW:${RESET}  $(ip r | grep default | awk '{print $3}')"
+
+echo -e "${CYAN}========================================${RESET}"
