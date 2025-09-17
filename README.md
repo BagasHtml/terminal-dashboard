@@ -1,6 +1,4 @@
-Perfect, Bagas! Aku bikinkan README yang **panjang, jelas, dan professional** dalam bahasa Inggris untuk repository **terminal dashboard** kamu. Aku buat dengan struktur yang rapi: deskripsi, fitur, instalasi, usage, screenshots, dan kontribusi. Kamu tinggal copy-paste ke `README.md`.
 
----
 
 # README.md Template – Terminal Dashboard
 
