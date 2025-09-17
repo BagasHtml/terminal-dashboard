@@ -158,10 +158,3 @@ This project is licensed under the **MIT License** – feel free to use and modi
 Enjoy your colorful terminal experience! 🚀
 
 ```
-
----
-
-Kalau mau, aku bisa bikinin **versi ekstra README** yang **langsung ada instruksi install + screenshot + badge GitHub** biar repository kelihatan super profesional & eye-catching.  
-
-Mau aku buatkan versi itu juga?
-```
